@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <h1>PERSONAL DETAILS</h1>
+    <fieldset class="fieldset">
+        <legend class="legend">Forms</legend>
+    <form action="https:httpbin.org/get" method="get">
+        <label for="username" class="form-element">User Name:</label>
+        <input type:"text" id="username" name="username"
+        required minlength="3"
+        autocomplete="on" class="form-element" placeholder="type your username">
+       <br><br> 
+       <label for="password" class="form-element">Password:</label>
+       <input type:"password"
+       id="password"
+       name="password"
+       required minlength="8"
+       autocomplete="on" 
+       class="form-element"
+       placeholder="type your password">
+       <br><br>
+       <label  class="form-element">
+        Gender:
+       </label>
+       <input type="radio" id="male" name="gender" value="male" required calss=""form-element>
+       <label for="male" class="form-element">Male</label>  
+       <input type="radio" id="female" name="gender" value="female" required class="form-element">
+       <label for="female" class="form-element">Female</label>
+       <br><br>
+       <label class="form-element">Skills:</label>
+       <input type="checkbox"
+       id="C" name="skills" value="C"  
+       class="form-element">
+       <label for="C" class="form-element">C</label>
+       <input type="checkbox"
+       id="Java" name="skills" value="Java"
+       class="form-element">
+       <label for="Java" class="form-element">Java</label>
+       <input type="checkbox"
+       id="JavaScript" name="skills" value="JavaScript" 
+       class="form-element">
+       <label for="JavaScript" class="form-element">JavaScript</label>
+       <input type="checkbox"
+       id="C++" name="skills" value="C++" 
+       class="form-element">
+       <label for="C++" class="form-element">C++</label>
+       <br><br>
+       <label for="work" class="form-element">Place of work:</label>
+       
+       <select name="placeofwork" id="work" required class="form-element">
+        <option aria-placeholder="select a option">Select a option</option>
+        <option value="Coimbatore">Coimbatore</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Hydrebad">Hydrebad</option>
+       </select>
+       <br><br>
+       <label for="birthday" class="form-element">Date of Birth:</label>
+       <input type="date" id="birthday" name="birthday"
+       required class="form-element">
+       <br><br>
+       <label for="email" class="form-element">Email:</label>
+       <input type="email" id="email" name="email" required  autocomplete="on" class="form-element" >
+       <br><br>
+       <label for="phone" class="form-element">Phone:</label>
+       <input type="tel" id="phone" required name="phone" autocomplete="on" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="919999999999"
+       class="form-element">
+       <br><br>
+       <label for="photo" class="form-element">Photo</label>
+       <input type="file" id="photo" name="photo" 
+       accept="image/*" class="form-element">
+       <br><br>
+       <label for="bio" class="form-element">Bio :</label>
+       <textarea id="bio" name="bio" required 
+       
+       placeholder="write something about you"
+       class="form-element"></textarea>
+       <br><br>
+       <label for="color" class="form-element">Favorite color:</label>
+       <input type="color" id="color" name="color" class="form-element">
+       <br><br>
+       <button type="submit" formaction="https:httpbin.org/post" formmethod="post">submit</button>
+
+
+    </fieldset>
+
+
+
+
+    </form>
+</body>
+</html>
